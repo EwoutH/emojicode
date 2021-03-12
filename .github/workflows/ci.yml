@@ -12,8 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
-    - run: mkdir build && cd build
-    - run: cmake .. -GNinja
+    - run: cmake . -GNinja
     - run: ninja
     - run: ninja tests
 
@@ -22,7 +21,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
-    - run: mkdir build && cd build
-    - run: cmake .. -GNinja
+    - run: cmake . -GNinja
     - run: ninja
     - run: ninja tests
