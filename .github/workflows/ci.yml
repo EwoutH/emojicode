@@ -12,8 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
-    - run: git update-index --chmod=+x ./.travis/install.sh
-    - run: ./.travis/install.sh
     - run: mkdir build && cd build
     - run: cmake .. -GNinja
     - run: ninja
@@ -24,8 +22,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
-    - run: git update-index --chmod=+x ./.travis/install.sh
-    - run: ./.travis/install.sh
     - run: mkdir build && cd build
     - run: cmake .. -GNinja
     - run: ninja
