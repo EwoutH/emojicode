@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-      - compiler: [gcc, clang]
+        compiler: [gcc, clang]
     env:
       CC: ${{matrix.compiler}}
       CXX: ${{matrix.compiler}}
