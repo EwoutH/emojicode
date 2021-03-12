@@ -18,6 +18,9 @@ jobs:
 
   macos:
     runs-on: macos-latest
+    env:
+      CC: clang
+      CXX: clang
     steps:
     - uses: actions/checkout@v2
     - uses: seanmiddleditch/gha-setup-ninja@master
